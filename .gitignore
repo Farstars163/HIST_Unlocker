@@ -1,0 +1,10 @@
+apk/.gradle/
+apk/.idea/
+apk/.kotlin/
+apk/build/
+apk/app/build/
+apk/local.properties
+dist/
+config.json
+__pycache__/
+*.pyc
