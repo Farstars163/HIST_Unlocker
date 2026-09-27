@@ -1,6 +1,6 @@
 # HIST_Unlocker
 
-## 抓包获取参数
+## 获取参数
 
 1. ![1](docs/1.png)
 2. ![2](docs/2.png)
@@ -13,16 +13,19 @@
 ```bash
 pip install pycryptodome bleak
 ```
+将模板 `config.example.json`重命名为config.json，并按照实际获取的参数信息填写对应字段:
 
-填写 `config.json`（模板见 `config.example.json`）：
+⚠️⚠️⚠️：为了保障人身安全，请不要将信息泄漏⚠️⚠️⚠️
+
+填写 `config.json`：
 
 | 字段 | 说明 |
 | --- | --- |
 | lockMac | 门锁蓝牙 MAC |
 | aesKey | 16 字节密钥 |
-| authCode | 鉴权码（hex） |
+| authCode | 鉴权码 |
 | keyGroupId | 密钥组 ID |
-| timezoneOffset | 时区偏移（分钟） |
+| timezoneOffset | 时区偏移 |
 
 ```bash
 python hist_unlocker.py
